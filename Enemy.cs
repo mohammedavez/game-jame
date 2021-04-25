@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
                 
                 else {
                     playerConsume=0;
-                    Debug.Log("nahi marta");
+                    Debug.Log("");
                     consume = 0;
                     //Destroy(col.gameObject);
                }
@@ -48,9 +48,9 @@ public class Enemy : MonoBehaviour
     {
         if(Input.GetButton("Fire2")){
            if (consume==1 && health >=0){
-                 Debug.Log("holamalluanderagaya");
+                 Debug.Log("");
                 //if(Input.GetKeyDown(KeyCode.G)){
-                    Debug.Log("mar gaya maderchod");
+                    Debug.Log("");
                 Debug.Log(health);
                 health=health-10;
 
@@ -90,7 +90,7 @@ public class Enemy : MonoBehaviour
             timeLeft = 10;
         }
         if(health<=0){
-        Debug.Log("ab koun hain maderchod, maaakii!");
+        Debug.Log("");
         Destroy(gameObject);
         }
     }
